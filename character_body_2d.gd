@@ -10,4 +10,6 @@ func _physics_process(delta: float) -> void:
 		print_debug(get_slide_collision_count())
 		for i in get_slide_collision_count():
 			var collision = get_slide_collision(i)
-			print_debug("Collided with: ", instance_from_id(collision.get_collider().get_instance_id()))
+			var tilemap = instance_from_id(collision.get_collider().get_instance_id());
+			var coords = tilemap.local_to_map(get_parent().position);
+			print_debug("Collided with: ", coords)
