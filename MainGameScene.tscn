@@ -65,6 +65,7 @@ script = ExtResource("3_1cpw7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/CharacterBody2D"]
 scale = Vector2(100, 100)
 shape = SubResource("CircleShape2D_6fhgp")
+<<<<<<< ours
 <<<<<<< HEAD
 one_way_collision = true
 =======
@@ -72,3 +73,8 @@ one_way_collision = true
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]
 zoom = Vector2(3, 3)
 >>>>>>> 27f55698e402098796a7d27a10b39c553f373a5f
+=======
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+zoom = Vector2(3, 3)
+>>>>>>> theirs
