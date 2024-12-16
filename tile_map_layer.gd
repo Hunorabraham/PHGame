@@ -11,13 +11,15 @@ func _ready() -> void:
 	var content = file.get_as_text()
 	for line in content.split("\n",false):
 		var dataPerLine = line.split(":",false)
-		print_debug(parseVector(dataPerLine[0]))
+		var coords = parseVector(dataPerLine[0])
 		match dataPerLine[1]:
 			"floor":
 				#add floortile
+				self.set_cell(coords, -1,Vector2i(0,0),0)
 				pass
 			"transition":
 				#add transition
+				self.set_cell(coords, -1,Vector2i(1,0),0)
 				pass
 	
 	#for tile in self.get_used_cells():
