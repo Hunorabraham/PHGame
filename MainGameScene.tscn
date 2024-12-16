@@ -18,7 +18,9 @@ sources/0 = SubResource("TileSetAtlasSource_xhag7")
 
 [node name="Node2D" type="Node2D"]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="MapRoot" type="Node2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="MapRoot"]
 y_sort_enabled = true
 texture_filter = 1
 position = Vector2(500, 500)
