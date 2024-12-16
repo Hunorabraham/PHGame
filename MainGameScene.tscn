@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c5f0hvje2ou3v"]
+[gd_scene load_steps=11 format=3 uid="uid://c5f0hvje2ou3v"]
 
 [ext_resource type="Texture2D" uid="uid://bu8s3gp56n5gt" path="res://textures/tilesTest.png" id="1_38tmu"]
 [ext_resource type="Script" path="res://tile_map_layer.gd" id="1_euwdt"]
@@ -6,13 +6,19 @@
 [ext_resource type="Script" path="res://character_body_2d.gd" id="3_1cpw7"]
 [ext_resource type="Texture2D" uid="uid://8vg1wv2xx0pa" path="res://textures/CharacterTest.png" id="4_icee7"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_uipkw"]
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xhag7"]
 texture = ExtResource("1_38tmu")
 texture_region_size = Vector2i(32, 20)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
 0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
 1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_egq6c"]
 texture = ExtResource("2_cyf5x")
@@ -32,6 +38,7 @@ tile_shape = 1
 tile_layout = 5
 tile_size = Vector2i(32, 16)
 physics_layer_0/collision_layer = 1
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_uipkw")
 sources/0 = SubResource("TileSetAtlasSource_xhag7")
 sources/1 = SubResource("TileSetAtlasSource_egq6c")
 
@@ -44,7 +51,9 @@ sources/1 = SubResource("TileSetAtlasSource_egq6c")
 [node name="Floor Layer" type="TileMapLayer" parent="MapRoot"]
 y_sort_enabled = true
 texture_filter = 1
+tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 tile_set = SubResource("TileSet_agcpp")
+use_kinematic_bodies = true
 script = ExtResource("1_euwdt")
 
 [node name="Object Layer" type="TileMapLayer" parent="MapRoot"]
@@ -63,18 +72,7 @@ motion_mode = 1
 script = ExtResource("3_1cpw7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/CharacterBody2D"]
-scale = Vector2(100, 100)
 shape = SubResource("CircleShape2D_6fhgp")
-<<<<<<< ours
-<<<<<<< HEAD
-one_way_collision = true
-=======
 
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]
 zoom = Vector2(3, 3)
->>>>>>> 27f55698e402098796a7d27a10b39c553f373a5f
-=======
-
-[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
-zoom = Vector2(3, 3)
->>>>>>> theirs
