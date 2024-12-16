@@ -19,7 +19,6 @@ func loadRoom(id: int)->void:
 		match dataPerLine[1]:
 			"floor":
 				#add floortile
-				print_debug("vittu")
 				self.set_cell(coords, 0,Vector2i(0,0),0)
 			"transit":
 				#add transition
