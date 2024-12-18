@@ -31,3 +31,4 @@ func parseVector(source :String) -> Vector2i:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	#print_debug(self.local_to_map(get_node("../../Player").position))
