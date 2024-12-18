@@ -8,7 +8,6 @@ func _ready() -> void:
 	# hard coded for now
 	#load room
 	loadRoom(1)
-	
 
 func loadRoom(id: int)->void:
 	var file = FileAccess.open("res://data//Room%d.txt" % id, FileAccess.READ)

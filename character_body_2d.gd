@@ -11,12 +11,12 @@ func _physics_process(delta: float) -> void:
 	if(Input.is_key_pressed(KEY_D)):
 		self.velocity.x += SPEED*delta
 	if(Input.is_key_pressed(KEY_W)):
-		self.velocity.y -= SPEED*delta
+		self.velocity.y -= SPEED*delta/2
 	if(Input.is_key_pressed(KEY_S)):
-		self.velocity.y += SPEED*delta
+		self.velocity.y += SPEED*delta/2
 	
 	var sprite = get_node("Sprite2D")
-	
+	#crazy
 	if(velocity.x < 0 and velocity.y < 0):
 		sprite.frame = 3
 	elif(velocity.x < 0 and velocity.y > 0):
