@@ -21,16 +21,16 @@ texture = ExtResource("2_cyf5x")
 texture_region_size = Vector2i(24, 27)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, 9)
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -22.8042, -12.1976, -16.617, -12.251, -1.87452, 0.176777, 4.41942, 12.0388, -1.98058, 11.844, -16.617)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.125, -6.5, -10.625, -1.125, 0, 4, 10.5, -1.125)
 0:1/0 = 0
 0:1/0/texture_origin = Vector2i(0, 9)
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -22.8042, -12.1976, -16.617, -12.251, -1.87452, 0.176777, 4.41942, 12.0388, -1.98058, 11.844, -16.617)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.125, -6.5, -10.625, -1.125, 0, 4, 10.5, -1.125)
 1:0/0 = 0
 1:0/0/texture_origin = Vector2i(0, 9)
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -22.8042, -12.1976, -16.617, -12.251, -1.87452, 0.176777, 4.41942, 12.0388, -1.98058, 11.844, -16.617)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.125, -6.5, -10.625, -1.125, 0, 4, 10.5, -1.125)
 1:1/0 = 0
 1:1/0/texture_origin = Vector2i(0, 9)
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -22.8042, -12.1976, -16.617, -12.251, -1.87452, 0.176777, 4.41942, 12.0388, -1.98058, 11.844, -16.617)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.125, -6.5, -10.625, -1.125, 0, 4, 10.5, -1.125)
 
 [sub_resource type="TileSet" id="TileSet_agcpp"]
 tile_shape = 1

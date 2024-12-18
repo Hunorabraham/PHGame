@@ -38,4 +38,4 @@ func _physics_process(delta: float) -> void:
 	if(is_on_wall()):
 		for i in get_slide_collision_count():
 			var collision = get_slide_collision(i)
-			
+			print_debug("Collided with: ", get_node("../MapRoot/Object Layer").local_to_map(collision.get_position()))
